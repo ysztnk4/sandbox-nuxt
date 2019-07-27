@@ -30,6 +30,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/antd-ui'
+    '@/plugins/filters'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -45,6 +46,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vender: ["axios", "dayjs"],
     /*
     ** You can extend webpack config here
     */
